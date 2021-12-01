@@ -506,8 +506,8 @@ Out of interest, I used PUMS data to look at the intersecting identities of race
 # pums_hca_2019_1yr <- read_csv(unzip(temp,"psam_h06.csv"))
 # 
 # unlink(temp)
-
-#Load PUMS data with variables for race, private health insurance coverage, and public health insurance coverage
+# 
+# #Load PUMS data with variables for race, private health insurance coverage, and public health insurance coverage
 # pums_2019_1yr <- getCensus(
 #   name = "acs/acs1/pums",
 #   vintage = 2019,
@@ -524,8 +524,8 @@ Out of interest, I used PUMS data to look at the intersecting identities of race
 #     "PUBCOV"
 #   )
 # )
-# 
-# saveRDS(pums_2019_1yr, "final_pums.rds")
+
+#saveRDS(pums_2019_1yr, "final_pums.rds")
 pums_2019_1yr <- readRDS("final_pums.rds")
 
 ca_pumas <-
